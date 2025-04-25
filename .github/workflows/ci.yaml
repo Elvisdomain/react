@@ -97,8 +97,8 @@ jobs:
         with:
           projectBaseDir: backend
           args: >
-            -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=quiz-acacdemy
+            -Dsonar.organization=quiz-academy
+            -Dsonar.projectKey=quiz-academy
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=.
