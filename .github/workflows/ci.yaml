@@ -52,7 +52,7 @@ jobs:
           projectBaseDir: quiz-app
           args: >
             -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=react
+            -Dsonar.projectKey=quiz-acacdemy
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=src/
@@ -95,10 +95,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectBaseDir: quiz-app
+          projectBaseDir: backend
           args: >
             -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=react
+            -Dsonar.projectKey=quiz-acacdemy
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=.
