@@ -4,6 +4,8 @@ on:
   push:
       branches: 
         - main
+  pull_request:
+      branches: main
 
 jobs:
   frontend-test:
@@ -50,7 +52,7 @@ jobs:
           projectBaseDir: quiz-app
           args: >
             -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=quiz-acacdemy
+            -Dsonar.projectKey=react
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=src/
@@ -93,10 +95,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectBaseDir: backend
+          projectBaseDir: quiz-app
           args: >
             -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=quiz-acacdemy
+            -Dsonar.projectKey=react
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=.
