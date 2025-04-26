@@ -52,7 +52,7 @@ jobs:
           projectBaseDir: quiz-app
           args: >
             -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=quiz-acacdemy
+            -Dsonar.projectKey=Elvisdomain_react
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=src/
@@ -98,7 +98,7 @@ jobs:
           projectBaseDir: backend
           args: >
             -Dsonar.organization=quiz-acacdemy
-            -Dsonar.projectKey=quiz-acacdemy
+            -Dsonar.projectKey=Elvisdomain_react
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.sources=.
